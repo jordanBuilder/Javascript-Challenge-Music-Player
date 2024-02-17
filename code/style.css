@@ -19,6 +19,7 @@ body{
     width: 200%;
     height: 200%;
     top: -50%;
+    left:-50%;
     z-index: -1;
 }
 
@@ -54,9 +55,10 @@ body{
 .player-img{
     width: 300px;
     height:300px;
+    position: relative;
     top: -50px;
     left: 50px;
-    position: relative;
+    
 }
  
 .player-img img{
@@ -92,4 +94,54 @@ h3{
     text-align: center;
     font-weight: 500;
     margin: 10px 0 0;
+}
+.player-progress{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor:pointer;
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 90%;
+}
+
+.progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration{
+ position: relative;
+ top: -25px;
+ display: flex;   
+ justify-content: space-between;
+ column-gap: 315px;
+}
+
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+
+.fa-solid{
+    font-size: 30px;
+    color: #666;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(40%);
+}
+
+.play-button{
+    font-size: 44px;
+    position:relative;
+    top: 3px;
 }
