@@ -4,7 +4,7 @@ artist = document.getElementById("music-artist"),
 currentTimeEl = document.getElementById("current-time"),
 durationEl = document.getElementById("duration"),
 progress = document.getElementById("progress"),
-playerProgess = document.getElementById("player-progess"),
+playerProgess = document.getElementById("player-progress"),
 prevBtn = document.getElementById("prev"),
 nextBtn = document.getElementById("next"),
 playBtn = document.getElementById("play"),
@@ -43,6 +43,11 @@ function togglePlay(){
         playMusic();
     }
 }
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        togglePlay();
+    }
+});
 
 function playMusic(){
     isPlaying = true;
